@@ -1,10 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET customer listing. */
 router.get('/', function(req, res, next) {
-  console.log("\nhit the home route...\n")
-  res.render('index', { title: 'Customer Generator' });
+    console.log("\nHit the customer route...\n")
+  res.send('Gonna get you a customer...');
 });
 
 module.exports = router;
