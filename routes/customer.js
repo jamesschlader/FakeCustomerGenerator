@@ -1,10 +1,23 @@
 var express = require('express');
 var router = express.Router();
+const faker = require("faker");
 
 /* GET customer listing. */
 router.get('/', function(req, res, next) {
-    console.log("\nHit the customer route...\n")
-  res.send('Gonna get you a customer...');
+
+    const name = faker.name.findName();
+    const email = faker.internet.email();
+    const address = faker.address.streetAddress();
+    const city = faker.address.city();
+    const state = faker.address.state();
+    const zip = faker.address.zipCode();
+    const image = faker.internet.avatar()
+
+    const returnObject = {
+        name, email, address, city, state, zip, image
+    }
+
+  res.send(returnObject);
 });
 
 module.exports = router;
