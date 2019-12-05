@@ -10,7 +10,7 @@ const getOne = ()=>{
     const state = faker.address.state();
     const zip = faker.address.zipCode();
     const image = faker.internet.avatar()
-    return `"${firstName}, ${lastName}", "${email}", "${image}", "${address}", "${city}, ${state}", ${zip}\n`
+    return `"${lastName}, ${firstName}", "${email}", "${image}", "${address}", "${city}, ${state}", ${zip}\n`
 }
 
 
