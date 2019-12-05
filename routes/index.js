@@ -18,7 +18,7 @@ router.get('/', (req, res, next) => {
 });
 
 router.get("/csv", (req, res, next) =>{
-  res.send(getOne)
+  res.send(getOne())
 })
 
 router.get("/csv/:number", (req, res, next) => {
