@@ -43,7 +43,7 @@ router.get("/resume", (req, res, next) => {
 	res.send(getResume());
 });
 
-router.get("/image", (res, req, next) => {
+router.get("/image", (req, res, next) => {
 	res.send(getImage());
 });
 
