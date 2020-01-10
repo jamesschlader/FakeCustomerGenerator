@@ -1,5 +1,6 @@
 const faker = require("faker");
 
+<<<<<<< HEAD
 const getResume = ()=>{
    
     const job = {};
@@ -9,8 +10,18 @@ const getResume = ()=>{
     job.fromValue = oneDate <= anotherDate ? oneDate : anotherDate;
     job.toValue = oneDate <= anotherDate ? anotherDate : oneDate;
     job.description = faker.lorem.sentence();
+=======
+const getResume = () => {
+  const job = {};
+  job.company = faker.company.companyName();
+  const oneDate = faker.date.past();
+  const anotherDate = faker.date.past();
+  job.fromValue = oneDate <= anotherDate ? oneDate : anotherDate;
+  job.toValue = oneDate <= anotherDate ? anotherDate : oneDate;
+  job.description = faker.lorem.sentence();
+>>>>>>> 9068241e39ac5cd5266b3cfb725817023d22bd00
 
-    return job
-}
+  return job;
+};
 
-module.exports = getResume
+module.exports = getResume;
