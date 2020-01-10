@@ -14,7 +14,7 @@ const getResume = () => {
 		job.description = faker.lorem.sentence();
 		resumes.push(job);
 	}
-	return resumes;
+	return { resume: resumes };
 };
 
 module.exports = getResume;
