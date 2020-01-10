@@ -4,6 +4,7 @@ const faker = require("faker");
 const getOne = require("../utilities/getOne");
 const getMany = require("../utilities/getMany");
 const getResume = require("../utilities/getResume");
+const getImage = require("../utilities/getImage");
 
 /* GET home page. */
 router.get("/", (req, res, next) => {
