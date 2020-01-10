@@ -1,10 +1,10 @@
 var express = require("express");
 var router = express.Router();
 const faker = require("faker");
-const getOne = require("../utilities/getOne");
-const getMany = require("../utilities/getMany");
-const getResume = require("../utilities/getResume");
-const getImage = require("../utilities/getImage");
+const getOne = require("../utilities/getOne.js");
+const getMany = require("../utilities/getMany.js");
+const getResume = require("../utilities/getResume.js");
+const getImage = require("../utilities/getImage.js");
 
 /* GET home page. */
 router.get("/", (req, res, next) => {
